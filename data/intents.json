@@ -1,0 +1,53 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! What can I do for you?",
+        "Hey! How can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!"
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like?",
+        "Tell me the weather",
+        "How's the weather today?"
+      ],
+      "responses": [
+        "Let me check the weather for you.",
+        "Fetching the weather details..."
+      ]
+    },
+    {
+      "tag": "reminder",
+      "patterns": [
+        "Set a reminder",
+        "Remind me to",
+        "Add a reminder"
+      ],
+      "responses": [
+        "Sure, what would you like to be reminded about?",
+        "When would you like the reminder to be set?"
+      ]
+    }
+  ]
+}
