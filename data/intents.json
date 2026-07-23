@@ -6,23 +6,15 @@
         "Hi",
         "Hello",
         "Hey",
-        "Hi there",
-        "Hello there",
         "Good morning",
         "Good afternoon",
-        "Good evening",
-        "Greetings",
-        "Howdy",
-        "Nice to meet you",
-        "How are you",
-        "What's up",
-        "Hey assistant",
-        "Can you help me"
+        "Good evening"
       ],
       "responses": [
         "Hello! How can I assist you today?",
         "Hi there! What can I do for you?",
-        "Hey! How can I help?"
+        "Hey! How can I help?",
+        "Good day! How can I assist you?"
       ]
     },
     {
@@ -31,23 +23,12 @@
         "Bye",
         "Goodbye",
         "See you later",
-        "Catch you later",
-        "Talk to you later",
-        "Have a nice day",
-        "See you soon",
-        "I'm leaving",
-        "Exit",
-        "Quit",
-        "Close the application",
-        "Take care",
-        "Farewell",
-        "Bye bye",
-        "See you next time"
+        "Talk to you soon"
       ],
       "responses": [
         "Goodbye! Have a great day!",
         "See you later! Take care!",
-        "Bye! Hope to see you again."
+        "Talk to you soon!"
       ]
     },
     {
@@ -56,23 +37,13 @@
         "What's the weather like?",
         "Tell me the weather",
         "How's the weather today?",
-        "Weather today",
-        "Will it rain today?",
-        "Is it sunny outside?",
-        "Current weather",
-        "Show me today's weather",
-        "Temperature today",
-        "Weather forecast",
-        "How hot is it today?",
-        "How cold is it outside?",
-        "Do I need an umbrella?",
-        "What's today's temperature?",
-        "Is it raining?"
+        "Weather update",
+        "Is it going to rain today?"
       ],
       "responses": [
         "Let me check the weather for you.",
         "Fetching the weather details...",
-        "Please wait while I get today's weather."
+        "Here's the weather update."
       ]
     },
     {
@@ -81,23 +52,27 @@
         "Set a reminder",
         "Remind me to",
         "Add a reminder",
-        "Create a reminder",
-        "Remember this for me",
-        "Remind me tomorrow",
-        "Remind me in one hour",
-        "Set an alarm",
-        "Create an alarm",
-        "I need a reminder",
         "Can you remind me?",
-        "Schedule a reminder",
-        "Notify me later",
-        "Add reminder for meeting",
-        "Remind me about my meeting"
+        "Create a reminder"
       ],
       "responses": [
         "Sure, what would you like to be reminded about?",
         "When would you like the reminder to be set?",
-        "Okay, tell me the reminder details."
+        "Got it. What is the reminder for?"
+      ]
+    },
+    {
+      "tag": "knowledge",
+      "patterns": [
+        "Tell me a fact",
+        "Do you know any interesting facts?",
+        "Share some knowledge",
+        "Give me a fun fact"
+      ],
+      "responses": [
+        "Here's a fun fact: Did you know that honey never spoils?",
+        "Sure! Did you know that octopuses have three hearts?",
+        "Did you know that a day on Venus is longer than a year on Venus?"
       ]
     }
   ]

@@ -26,36 +26,18 @@ city = "New York"
 weather_update = get_weather(city)
 print(F"weather Update: {weather_update}")
 
-#     params = {
-#         "q": city,
-#         "appid": API_KEY,
-#         "units": "metric"
-#     }
+def get_news():
+    api_key = "4986bc0fe00e43cfb823aed7422c257e"
+    url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={api_key}"
 
-#     try:
-#         response = requests.get(BASE_URL, params=params)
-#         response.raise_for_status()
+    response = requests.get(url)
+    data = response.json()
+    if data["status"] == "ok":
+        aritcles = data['articles']
+        news_list = [f"{article['title'] - {article['source']['name']}}" for article in aritcles[:5]]
+        return "Here are top news headlines:\\\\n" + "\\\n".join(news_list)
+    else:
+        return "Unable to fetch news at the moment"
 
-#         data = response.json()
-
-#         temperature = data["main"]["temp"]
-#         humidity = data["main"]["humidity"]
-#         description = data["weather"][0]["description"]
-
-#         return (
-#             f"Weather in {city}\n"
-#             f"Temperature: {temperature}°C\n"
-#             f"Humidity: {humidity}%\n"
-#             f"Condition: {description.capitalize()}"
-#         )
-
-#     except requests.exceptions.HTTPError:
-#         return "City not found."
-
-#     except Exception as e:
-#         return f"Error: {e}"
-
-
-# if __name__ == "__main__":
-#     city = input("Enter city name: ")
-#     print(get_weather(city))
+news_update = get_news()
+print(f"News Update: {news_update}")
