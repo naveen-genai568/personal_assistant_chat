@@ -34,7 +34,7 @@ def get_news():
     data = response.json()
     if data["status"] == "ok":
         aritcles = data['articles']
-        news_list = [f"{article['title'] - {article['source']['name']}}" for article in aritcles[:5]]
+        news_list = [f"{article['title']} - {article['source']['name']}" for article in aritcles[:5]]
         return "Here are top news headlines:\\\\n" + "\\\n".join(news_list)
     else:
         return "Unable to fetch news at the moment"

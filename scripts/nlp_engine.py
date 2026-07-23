@@ -73,17 +73,17 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-from imblearn.over_sampling import SMOTE
+# from imblearn.over_sampling import SMOTE
 
-print(f"Missing values: {np.isnan(X).sum()}")
+# print(f"Missing values: {np.isnan(X).sum()}")
 
-X = np.nan_to_num(X)
+# X = np.nan_to_num(X)
 
-smote = SMOTE(random_state=42)
+# smote = SMOTE(random_state=42)
 
-X_resampled, Y_resampled = smote.fit_resample(X, y)
+# X_resampled, Y_resampled = smote.fit_resample(X, y)
 
-X_train, X_test, y_train, y_test = train_test_split(X_resampled,Y_resampled, test_size = 0.2, random_state=42)
+# X_train, X_test, y_train, y_test = train_test_split(X_resampled,Y_resampled, test_size = 0.2, random_state=42)
 
 
 # Build the model
