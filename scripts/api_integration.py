@@ -8,7 +8,7 @@ def get_weather(city):
     API_KEY = "c968c19d5c4da554e1e5d5ea4ce7b778"
     BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 
-    complete_url = BASE_URL + "q=" + city + "&appid="+API_KEY+"&units=metric"
+    complete_url = f"{BASE_URL}q={city}&appid={API_KEY}&units=metric"
 
     response = requests.get(complete_url)
     data = response.json()
