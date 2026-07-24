@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from scripts.nlp_engine import predict_intent
 from scripts.api_integration import get_weather, get_news
 from scripts.task_manager import add_reminder, view_reminders, delete_reminder
@@ -7,6 +7,11 @@ import logging
 logging.basicConfig(filename='chatbot.log',level=logging.INFO)
 
 app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return render_template("/workspaces/personal_assistant_chat/template/index.html")
+
 feedback_data=[]
 @app.route('/chat', methods=['POST'])
 def chat():
